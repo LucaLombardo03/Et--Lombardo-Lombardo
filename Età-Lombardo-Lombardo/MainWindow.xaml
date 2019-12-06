@@ -1,0 +1,32 @@
+﻿<Window x:Class="Età_Lombardo_Lombardo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Età_Lombardo_Lombardo"
+        mc:Ignorable="d"
+        Title="Età Lombardo" Height="416" Width="734">
+    <Grid Background="MediumPurple">
+
+        <Label FontSize="15" Content="Il tuo giorno di nascita " HorizontalAlignment="Left" Margin="40,59,0,0" VerticalAlignment="Top" Height="35" Width="175" FontWeight="Bold"/>
+        <Label FontSize="15" Content="Il tuo anno di nascita" HorizontalAlignment="Left" Margin="40,163,0,0" VerticalAlignment="Top" Height="35" Width="175" RenderTransformOrigin="0.5,0.171" FontWeight="Bold"/>
+        <Label FontSize="15" Content="Il tuo mese di nascita" HorizontalAlignment="Left" Margin="40,114,0,0" VerticalAlignment="Top" Height="35" Width="175" FontWeight="Bold"/>
+        <TextBox FontSize="23" Name="txtAnno" HorizontalAlignment="Left" Height="35" Margin="220,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FF05F1DC"/>
+        <TextBox FontSize="23" Name="txtMese" HorizontalAlignment="Left" Height="35" Margin="220,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FF05F1DC"/>
+        <TextBox FontSize="23" Name="txtGiorno" HorizontalAlignment="Left" Height="35" Margin="220,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FF05F1DC"/>
+        <Button FontSize="23" FontStyle="Oblique" Name="btnCalcola" Content="Calcola" HorizontalAlignment="Left" Margin="460,224,0,0" VerticalAlignment="Top" Width="174" Height="51" Click="Calcola_Click"/>
+        <Label FontSize="25" Name="lblRisultato" Content="" HorizontalAlignment="Left" Margin="70,294,0,0" VerticalAlignment="Top" Height="70" Width="605" Background="#FFD39D78"/>
+        <Image Margin="395,59,30,188" Source="calendario_foto.jpg" Stretch="Fill"/>
+        <Label FontSize="25" Content="CALCOLATORE ETA'" HorizontalAlignment="Left" Height="40" Margin="245,10,0,0" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-5.148"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.577"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>
